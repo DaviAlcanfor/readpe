@@ -1,11 +1,11 @@
 all:
-	gcc -o readpe readpe.c -L./lib -lpetest
+	gcc -o readpe src/readpe.c -L./lib -lpetest
 
 clean:
 	rm -f readpe
 
 install:
-	install -m 0644 libpetest.so /usr/lib/petest.so
+	install -m 0644 lib/libpetest.so /usr/lib/libpetest.so
 
 uninstall:
-	rm -f /usr/bin/lib/libpetest.so
+	rm -f /usr/lib/libpetest.so

@@ -55,3 +55,5 @@ dkms.conf
 *.dwo
 readpe
 *.un~
+libpetest.so
+lib/libpetest.so
