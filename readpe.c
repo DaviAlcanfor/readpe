@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "lib/petest.h"
 
 void fatal(char *msg){
     fprintf(stderr, "%s\n", msg);
@@ -41,7 +42,7 @@ int main(int argc, char *argv[]) {
     
     fclose(fh);
 
-    if (!ispe(buffer))
+    if (!petest_ispe(buffer))
         fatal("Arquivo nao parece ser um executavel PE!");
         
 
