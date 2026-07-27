@@ -21,7 +21,7 @@ bool petest_init(PEFILE *pe){
     return true;
 }
 
-void petetest_deinit(PEFILE *pe){
+void petest_deinit(PEFILE *pe){
     if (pe->hdr_dos)
         free(pe->hdr_dos);
 }

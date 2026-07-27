@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
     
     petest_init(&pe);
     if (petest_ispe(&pe))
-        printf("Eh um PE! Continuando...\n")
+        printf("Eh um PE! Continuando...\n");
     else
         fatal("Nao eh um PE! Saindo...\n");
 
